@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="/login" method="POST" autocomplete="off" novalidate>
+        <!--서버의 로그인으로 보냄/GET은 서버로 넘어가는 정보 모두 오픈&POST는 비공개-->
+        <!--autocomplete는 사용자들이 로그인할때 자동완성 뜨게-->
+        <!--novalidate는 검증을 안하고 서버로 넘어감-->
+
+        <input type="email" name="id" placeholder="아이디를 입력!"> <!--타입이 email이면 이메일형식으로 로그인 해야함-->
+        <input type="password" name="pw" placeholder="비밀번호를 입력!">
+        <!--placeholder는 입력힌트/id는 서버에서 키값-->
+
+        <button type="submit">로그인</button>
+
+    </form>
+2
+</body>
+</html>

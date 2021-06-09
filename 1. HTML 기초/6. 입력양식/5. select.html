@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="#">
+
+        <select>
+            <optgroup label="Coffee"><!--그룹만들기-->
+                <option>Americano</option>
+                <option selected>Caffe Latte</option>
+                <!--카페라떼로 미리 선택되게-->
+                <option disabled>Cappuccino</option>
+                <!--선택 못되게-->
+            </optgroup>
+
+            <optgroup label="Juice">
+                <option>Orange Juice</option>
+                <option>Lime Juice</option>
+            </optgroup>
+        </select>
+
+        <hr>
+
+        <input type="text" list="fruits"><!--a입력하면 apple뜨게-->
+
+        <datalist id="fruits">
+            <option>Apple</option>
+            <option>Orange</option>
+            <option>Mango</option>
+            <option>PineApple</option>
+            <option>Peach</option>
+            <option>Grape</option>
+
+        </datalist>
+
+    </form>
+
+</body>
+
+</html>

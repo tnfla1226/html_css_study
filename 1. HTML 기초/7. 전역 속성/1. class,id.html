@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li {
+            font-style: italic;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .big {
+            font-size: 1.5em;
+        }
+        .one {
+            border-bottom: 1px solid orange;
+        }
+        .two {
+            border-bottom: 1px solid tomato;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li class="red big">사과</li>
+        <!--정의된 클래스 사용-->
+        <li class="big">오렌지</li>
+        <li class="red">딸기</li>
+        <li>바나나</li>
+    </ul>
+
+    <div class="red">체리</div>
+
+    <button id="one">1번</button>
+    <button id="two">2번</button>
+    <button id="three">3번</button>
+
+    <script>
+        document.querySelector('#one').onclick = e => {
+            alert('1번 버튼 클릭됨!');
+        };
+        document.querySelector('#two').onclick = e => {
+            alert('2번 버튼 클릭됨!');
+        };
+        document.querySelector('#three').onclick = e => {
+            alert('3번 버튼 클릭됨!');
+        };
+    </script>
+
+    <!--아이디는 중복사용 안됨-자바스크립트 이벤트에디자인은 크래스에 연동-->
+
+</body>
+
+</html>
