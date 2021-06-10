@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .fruits > li:nth-child(5) {
+            color: rgb(138, 138, 69);
+        }
+        /* (even)으로 짝수지정가능*/
+        .fruits > li:nth-child(2n) {
+            color: blue;
+        }
+        /* (odd)으로 짝수지정가능*/
+        .fruits > li:nth-child(2n+1) {
+            color: brown;
+        }
+        .fruits > li:nth-child(3n+1) {
+            font-style: italic;
+        }
+
+        /* nth-child를 먼저확인하고 태그확인하므로 적용안됨 
+        .food > p:nth-child(1) {
+            font-size: 1.3em;
+        }*/
+         /* 위에껄 해결하기 위해 nth-of-type 사용 */
+         .food > p:nth-of-type(1) {
+            font-size: 1.3em;
+            color: tomato;
+        }
+        .fruits li:not(.orange) {
+            list-style: none;
+            /* 오렌지 빼고 앞에 점 제거 */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <ul class="fruits">
+        <li>딸기</li>
+        <li>사과</li>
+        <li class="orange">오렌지</li>
+        <li>망고</li>
+        <li>바나나</li>
+        <li>복숭아</li>
+        <li>파인애플</li>
+    </ul>
+
+    <div class="food">
+        <div>짜장면</div>
+        <p>볶음밥</p>
+        <p>닭강정</p>
+        <span>짬뽕</span>
+    </div>
+
+
+</body>
+</html>

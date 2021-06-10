@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--내부스타일시트 적용 - 이 파일에서만 적용됨(재활용 어려움)-->
+    <style> 
+        h1, div {
+            font-style: italic;
+        }
+    </style>
+
+    <!--외부스타일시트 적용 - 다른 html파일에 사용가능(재활용성 좋음)-->
+    <link rel="stylesheet" href="./main.css">
+    <!--./생략가능-->
+
+
+
+
+</head>
+<body>
+   
+    <h1>개구쟁이 뽀로로</h1>
+    <div>HELLO</div>
+    <span style="color:blue; background: aqua; font-size: 24px">HELLO</span>
+    <!--인라인스타일시트 적용 - 적용해야할때마다 작성해야함(제일 안쓰임)-->
+    <p style="display: block;">안녕히 계세요~</p>
+
+</body>
+</html>

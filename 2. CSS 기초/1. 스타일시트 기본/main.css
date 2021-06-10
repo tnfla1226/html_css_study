@@ -1,0 +1,8 @@
+
+@import url(./side.css);
+/*sicd.css파일 불러옴*/
+
+h1, p {
+    color: red;
+    background: orange;
+}
