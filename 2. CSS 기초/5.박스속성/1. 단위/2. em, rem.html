@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div {
+            border: 2px solid black;
+        }
+
+        html {
+            font-size: 10px;
+        }
+        /*body가 html의 상속 막아줌*/
+        body {
+            font-size: 20px;
+        }
+        /*font-size를 10으로 따로 설정하면 10*60=600 안하면 20*60*/
+        .root {
+            width: 60rem;
+            font-size: 1.5em;
+        }
+        /*직속부모의 50%*/
+        .parent {
+            width: 50%;
+        }
+        .child {
+            width: 50%;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+
+</body>
+</html>
