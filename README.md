@@ -12,3 +12,6 @@
 
 ## reset.css 적용하기
 - head태그 아래에 '<'link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">'
+
+## 글꼴 적용
+- 구글 웹폰트(무료) 검색 --> 원하는 글꼴 선택 --> select this style 클릭 --> 링크복사(내부 css일때)/import(내부 css일때) --> CSS rules to specify families 부분 복사해서 적용
