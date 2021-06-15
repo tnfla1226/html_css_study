@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            /* 400 x 300 */
+            width: 400px;
+            height: 300px;
+            border: 2px solid red;
+            margin: 100;
+
+            /* 500 x 500 */
+            background-image: url('img/basic.jpg');
+            background-repeat: no-repeat;
+
+            /* 가로 세로 사이즈 지정 가능 */
+            /* background-size: 200px 100px; */
+
+            /* 원본은 1:1비율임
+            하나만 적으면 가로로 취급하고
+            세로 사이즈는 비율에 맞게 자동 조정 */
+            /* background-size: 300px; */
+
+            /* 가로 400에 맞추므로 세로도 400으로 커짐-->세로 100 짤림 */
+            /* background-size: cover;
+            background-position: 0 -50px; */
+
+            /* 세로 300에 맞춰지므로 가로100이 남음*/
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+
+</body>
+
+</html>

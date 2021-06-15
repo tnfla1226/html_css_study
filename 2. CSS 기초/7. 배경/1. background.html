@@ -7,30 +7,31 @@
     <title>Document</title>
 
     <style>
-        .box {
+         .box {
             width: 550px;
             height: 350px;
             border: 2px dashed gray;
 
-            background-color: orange;
+            /* background-color: orange; */
             /* ./는 내가 속한 폴도에서 찾는다(생략가능) */
-            background-image: url('./img/sky.jpg');
-            background-size: 200px;
+            /* background-image: url('./img/sky.jpg');
+            background-size: 200px; */
 
             /* no-repeat-반복하고싶지 않을때/repeat-x-가로 한줄 반복 */
-            background-repeat: no-repeat;
+            /* background-repeat: no-repeat; */
 
             /* 앞이 x축 뒤가 y축 설정 */
             /* background-position: right 10px; */
 
             /* background-position: center --> 정중앙에 하고싶을때 */
 
-            background-position: center;
+            /* background-position: center; */
 
-            /* 가장 많이 사용 */
-            background-size: cover;
+            background: orange url('img/sky.jpg') no-repeat fixed center / cover;
 
-        }
+        } 
+
+        
     </style>
 </head>
 <body>
