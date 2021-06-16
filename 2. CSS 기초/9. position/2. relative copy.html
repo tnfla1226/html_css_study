@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            border: 4px dashed orange;
+            font-size: 30px;
+        }
+
+        /* 2번이 움직여도  1,3번이 원래 2번자리를 침범하지 않음, 2번의 원래자리에서 움직임(상대적) */
+        .box:nth-child(2) {
+            position: relative;
+            left: 70px;
+            top: -50px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+</body>
+</html>
