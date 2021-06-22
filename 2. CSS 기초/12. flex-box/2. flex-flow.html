@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            border: 4px solid #000;
+            display: flex;
+            /* 기본값이 row이기 때문에 row는 안써도 수평배치 */
+            /* flex-direction: row; */
+
+            /* 수평배치 풀때 */
+            /* flex-direction: column; */
+
+            /* 수평배치 반대로 */
+            /* flex-direction: row-reverse; */
+
+            /* 수직배치 반대로 */
+            /* flex-direction: column-reverse; */
+
+            /* 줄여도 안뭉개짐 */
+            /* flex-wrap: wrap; */
+            
+            /* 줄이면 중개짐,기본속성 */
+            /* flex-wrap: nowrap; */
+
+            /* 한번에 쓰기 */
+            flex-flow: column wrap;
+        }
+        .item {
+            width: 150px;
+            height: 100px;
+            background: red;
+            border: 4px dashed orange;
+            border-radius: 10px;
+            font-size: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+    </div>
+
+</body>
+</html>
