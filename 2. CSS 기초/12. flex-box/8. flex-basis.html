@@ -9,13 +9,10 @@
     <style>
         .container {
             height: 400px;
-            border: 4px solid #000;
+            border: 4px solid;
             display: flex;
-            flex-flow: row wrap;
-            align-items: baseline;
-            /* align-content: center; */
-            
-          
+            flex-wrap: wrap;
+            align-items: center;
         }
         .item {
             width: 150px;
@@ -25,25 +22,35 @@
             border-radius: 10px;
             font-size: 40px;
 
-            /* 텍스트 중앙정렬 */
             display: flex;
             justify-content: center;
             align-items: center;
+
+            /* flex-grow: 1; */
+
+            /* 설정안하면 auto --> width나 text 뺀 부분에서 비율 정함 */
+            /* flex-basis: auto; */
+
+            /* width나 text가 0이란 의미 --> 비율을 정확하게 맞추기 위해 */
+            /* flex-basis: 0; */
+
+            /* grow:1, shrink:1, basis:0 */
+            flex: 1;
         }
-        .item:nth-child(even) {
-            font-size: 30px;
+        .item3 {
+            /* flex-grow: 2; */
+            flex: 2 auto;
         }
+
     </style>
 
 </head>
 <body>
-    
+
     <div class="container">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
     </div>
 
 </body>
